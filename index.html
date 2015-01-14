@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your App Title</title>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <dev-script type="text/javascript" src="js/libs.js">
+        <script type="text/javascript" src="js/lib/functionPrototypeBind.js"></script>
+        <script type="text/javascript" src="js/lib/classList.js"></script>
+        <script type="text/javascript" src="js/lib/requestAnimationFrame.js"></script>
+        <script type="text/javascript" src="js/lib/mustache.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/underscore.js"></script>
+        <script type="text/javascript" src="js/lib/backbone.js"></script>
+        <script type="text/javascript" src="js/lib/snap.svg.js"></script>
+        <script type="text/javascript" src="js/lib/backbone.localStorage-min.js"></script>
+        <script type="text/javascript" src="js/lib/backbone.uniquemodel.js"></script>
+        <script type="text/javascript" src="js/lib/howler.min.js"></script>
+        <script type="text/javascript" src="js/lib/require.js"></script>
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+    </dev-script>
+    <dev-link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="styles/famous.css" />
+        <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    </dev-link>
+
+    <!-- app code -->
+    <script type="text/javascript">
+        require(['index']);
+    </script>
+</head>
+<body>
+<script id="empty-item-view" type="text/x-handlebars-template">
+    <div class="empty-item">
+        <i class="removeButton fa fa-times-circle"></i>
+        <div class="empty-item-title">
+            {{title}}
+        </div>
+    </div>
+</script>
+</body>
+</html>
